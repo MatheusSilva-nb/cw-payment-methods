@@ -1,5 +1,6 @@
 import React from 'react';
 import { PaymentLookup } from './components/PaymentLookup';
+import { HelpWidget } from './components/HelpWidget';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         {/* Grid Pattern Overlay */}
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150"></div>
       </div>
+
+      {/* Help Widget */}
+      <HelpWidget />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24">
         
@@ -51,7 +55,7 @@ function App() {
 
         {/* Footer info */}
         <div className="mt-16 text-center text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Cardápio Web Integration Tool. Secure Connection.</p>
+          <p>© {new Date().getFullYear()} Cardápio Web</p>
         </div>
       </div>
     </div>
