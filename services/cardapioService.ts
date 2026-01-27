@@ -38,8 +38,7 @@ export const fetchPaymentMethods = async (apiKey: string, partnerKey: string): P
 
     const data = await response.json();
     
-    // Adjust logic based on actual API response structure. 
-    // Assuming data is an array or data.data is the array.
+
     if (Array.isArray(data)) {
       return data;
     } else if (data && Array.isArray(data.data)) {
@@ -48,8 +47,7 @@ export const fetchPaymentMethods = async (apiKey: string, partnerKey: string): P
     
     return [];
   } catch (error: any) {
-    // If it's a network error (like CORS) in this preview environment, we might want to show a specific message
-    // implying the need for a proxy server in a real production Next.js app, but here we just pass the error.
+
     console.error("Fetch error:", error);
     throw new Error(error.message || 'Falha ao conectar com o serviço. Verifique sua conexão.');
   }
