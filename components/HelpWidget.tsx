@@ -46,7 +46,7 @@ export const HelpWidget: React.FC = () => {
               Onde encontrar o X-API-KEY?
             </h4>
             <p className="text-slate-400 leading-relaxed pl-3.5 border-l border-white/5 ml-0.5">
-              O token do estabelecimento pode ser encontrado no portal em 1:
+              O token do estabelecimento pode ser encontrado no portal em:
               <br/>
               <span className="text-slate-200 font-medium block mt-1">Configurações &gt; Integrações &gt; API de Integração</span>
             </p>
